@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee list</title>
+    <link rel="stylesheet" href="../css/listStyle.css">
+    <script src="https://kit.fontawesome.com/83fa93bfba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+     <h3 >Employee List</h3>
+     <button><a href="/employee"><i class="fas fa-plus"></i>Create</a></button>
+ <table class="employee">
+
+  <tr>
+    <th>Full name</th>
+    <th>Email</th>
+    <th>Mobile</th>
+    <th>City</th>
+    <th></th>
+    <th></th>
+  </tr>
+  {{#each list}}
+  <tr>
+      <td>{{this.fullname}}</td>
+      <td>{{this.email}}</td>
+      <td>{{this.mobile}}</td>
+      <td>{{this.city}}</td>
+      <td><a href="/employee/{{this._id}}"><i class="fas fa-pencil-alt"></i></a></td>
+      <td><a href="/employee/delete/{{this._id}}" onclick="return confirm('are you sure to delete?')"><i class="fas fa-trash-alt"></i></a></td>
+  </tr>
+  {{/each}}
+  
+  </table>
+  </div>
+    
+</body>
+</html>

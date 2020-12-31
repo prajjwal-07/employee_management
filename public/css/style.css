@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    background-color:bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+.input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    
+    resize: vertical;
+}
+.error{
+    color: rgb(248, 85, 85);
+    font-size: small;
+    margin-bottom: 16px;
+
+}
+.submit{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.submit:hover{
+    background-color: #45a049;
+}
